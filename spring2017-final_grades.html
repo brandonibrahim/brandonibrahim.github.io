@@ -246,7 +246,8 @@
   }
   </script>
 <script type="text/javascript">
-        window.history.pushState('page2', 'Title', '/page2.php');
+  var stateObj = { foo: "bar" };
+   history.pushState(stateObj, "page 2", "bar.html");
 </script>
 <style type="text/css">
 :root #header + #content > #left > #rlblock_left,
